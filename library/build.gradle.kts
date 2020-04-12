@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    `kotlin-dsl`
+    java
     with(BuildPlugins) {
         id(kotlinJVM)
         id(testLogger)

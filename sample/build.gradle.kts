@@ -1,7 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.jetbrains.kotlin.jvm")
+    id(BuildPlugins.kotlinJVM)
+    application
 }
 
 dependencies {
@@ -13,4 +14,8 @@ tasks {
     withType<KotlinCompile>().configureEach {
         kotlinOptions.jvmTarget = Definitions.targetJDK
     }
+}
+
+application {
+    mainClassName = "io.labs.dotanuki.sample.ApplicationKt"
 }
