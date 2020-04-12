@@ -6,7 +6,7 @@ plugins {
 
 dependencies {
     implementation(Dependencies.kotlinStdLib)
-    implementation(project(":jvm-library"))
+    implementation(project(":library"))
 }
 
 tasks {

@@ -1,4 +1,4 @@
 rootProject.name = "jvm-library-boilerplate"
 
-include(":jvm-library")
+include(":library")
 include(":sample")
