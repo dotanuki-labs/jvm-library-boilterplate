@@ -4,6 +4,7 @@ plugins {
     java
     with(BuildPlugins) {
         id(kotlinJVM)
+        id(ktlint)
         id(testLogger)
     }
 }

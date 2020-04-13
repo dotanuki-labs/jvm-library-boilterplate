@@ -1,4 +1,5 @@
 buildscript {
+
     repositories {
         mavenCentral()
         maven("https://plugins.gradle.org/m2/")
@@ -7,6 +8,7 @@ buildscript {
     dependencies {
         classpath(Dependencies.kotlinGradlePlugin)
         classpath(Dependencies.testLoggerPlugin)
+        classpath(Dependencies.ktLintGradlePlugin)
     }
 }
 
