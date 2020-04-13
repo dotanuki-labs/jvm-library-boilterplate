@@ -15,8 +15,8 @@ jobs:
         with:
           java-version: 1.8
 
-      - name: Statis Analysis
+      - name: Code Analysis
         run: ./gradlew ktlintCheck --no-daemon
 
-      - name: Build
+      - name: Assemble and Test
         run: ./gradlew build --no-daemon
